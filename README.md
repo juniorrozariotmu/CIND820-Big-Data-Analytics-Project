@@ -20,7 +20,7 @@ Source: UCI Machine Learning Repository
 
 Time Period: January 2010 to September 2011
 
-Ket Fields: Invoice number, Stock code, Product description, Quantity purchased, Invoice date, Unit price, Customer ID, and Country of purchase.
+Key Fields: Invoice number, Stock code, Product description, Quantity purchased, Invoice date, Unit price, Customer ID, and Country of purchase.
 
 The dataset selected for this project is the Online Retail dataset from the UCI Machine Learning Repository. The dataset contains transactional data for a UK-based online retail business that primarily sells unique all-occasion gifts.
 
