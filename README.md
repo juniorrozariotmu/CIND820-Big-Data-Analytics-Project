@@ -30,6 +30,6 @@ Data cleaning and preprocessing will include removing transactions with missing 
 
 # Exploratory Data Analysis (EDA)
 
-Exploratory data analysis will be conducted to understand the dataset: it will look at transaction volume, missing values, sales patterns, and trasaction volume.
+Exploratory Data Analysis (EDA) will be performed to better understand the dataset. This includes examining transaction volume, identifying missing or inconsistent values, and analyzing sales patterns and trends.
 
 # Methodology Overview
