@@ -1,35 +1,108 @@
-# CIND820-Big-Data-Analytics-Project - Data Mining for Customer Behaviour Analysis in Retail Sales WIP
+# CIND820 - Big Data Analytics Project  
+## Data Mining for Customer Behaviour Analysis in Retail Sales *(WIP)*
 
-# Project Overview
+---
 
-This project focuses on applying data mining techniques to retail transactional data to uncover patterns in customer purchasing behavior. The goal is to use market basket analysis, customer segmentation, and sales driver analysis to reveal insights and develop business recommendations that can support cross-selling strategies, customer targeting, and revenue optimization.
+## Project Overview
 
-# Research Questions
+This project applies data mining techniques to retail transactional data to uncover patterns in customer purchasing behavior.  
 
-1. What product combinations are most frequently purchased together, and which associations offer the greatest cross-selling potential?
+The analysis integrates:
+- Customer segmentation (clustering)
+- Market basket analysis (association rule mining)
+- Revenue driver analysis (regression)
 
-2. Can customers be segmented based on purchasing behaviour (e.g., frequency, recency, monetary value, location), and what distinguishes high-value customers (customers generating most revenue/sales) to support targeted marketing and loyalty strategies?
+The goal is to generate actionable insights that support:
+- Cross-selling strategies  
+- Customer targeting  
+- Revenue optimization  
 
-3. What factors most strongly influence retail sales revenue and how can these insights inform pricing, promotion, and resource allocation strategies?
+---
 
-# Dataset Selection
+## Research Questions
 
-Dataset: Online Retail Dataset
+1. **Customer Segmentation**  
+   What distinct retail customer segments can be identified using behavioral clustering techniques based on recency, frequency, monetary value, and basket characteristics?
 
-Source: UCI Machine Learning Repository
+2. **Association Rule Mining**  
+   How do product association patterns differ across identified customer segments, and which segment-specific product combinations demonstrate the strongest cross-selling potential based on support, confidence, and lift?
 
-Time Period: January 2010 to September 2011
+3. **Revenue Driver Analysis**  
+   How do the individual behavioral components of RFM (Recency, Frequency, and Average Basket Size) structurally relate to overall retail revenue (Monetary), and what do these relationships suggest for marketing prioritization and resource allocation?
 
-Key Fields: Invoice number, Stock code, Product description, Quantity purchased, Invoice date, Unit price, Customer ID, and Country of purchase.
+---
 
-The dataset selected for this project is the Online Retail dataset from the UCI Machine Learning Repository. The dataset contains transactional data for a UK-based online retail business that primarily sells unique all-occasion gifts.
+## Dataset
 
-# Data Cleaning & Preprocessing
+- **Name:** Online Retail Dataset  
+- **Source:** UCI Machine Learning Repository  
+- **Time Period:** January 2010 – September 2011  
 
-Data cleaning and preprocessing will include removing transactions with missing CustomerID (for customer-level analyses), treating negative quantities as returns, imputing or removing missing entries, removing duplicate entries, standardizing capitalization/spelling, and feature engineering. 
+### Key Fields
+- Invoice Number  
+- Stock Code  
+- Product Description  
+- Quantity  
+- Invoice Date  
+- Unit Price  
+- Customer ID  
+- Country  
 
-# Exploratory Data Analysis (EDA)
+This dataset contains transactional records from a UK-based online retail company that primarily sells unique, all-occasion gift items.
 
-Exploratory Data Analysis (EDA) will be performed to better understand the dataset. This includes examining transaction volume, identifying missing or inconsistent values, and analyzing sales patterns and trends.
+---
 
-# Methodology Overview
+## Methodology
+
+The project follows a structured data mining workflow:
+
+### 1. Exploratory Data Analysis (EDA)
+- Summary of dataset structure (shape, missing values, data types)
+- Dataset variable overview 
+- Data quality checks (missing Customer IDs, cancellations, outliers)
+- Temporal analysis of sales trends over time
+
+---
+
+### 2. Data Cleaning & Preparation
+- Handling missing Customer IDs  
+- Removing cancellations and invalid transactions  
+- Feature engineering (RFM + basket metrics)
+
+---
+
+### 3. Customer Segmentation
+- K-Means clustering  
+- Hierarchical clustering (validation & comparison)
+
+---
+
+### 4. Market Basket Analysis
+- Association rule mining using support, confidence, and lift  
+- Segment-level pattern comparison  
+
+---
+
+### 5. Revenue Analysis
+- Regression modeling to analyze structural relationships between behavioral features and revenue  
+
+---
+
+## Repository Contents
+
+- `*.ipynb` → Jupyter Notebook containing full analysis  
+- `*.html` → Exported version of the notebook for easier viewing  
+
+---
+
+## Reproducibility
+
+To reproduce this project:
+
+1. Clone the repository
+
+2. Install required dependencies
+
+3. Download the dataset from the UCI Machine Learning Repository and place it in the project directory
+
+4. Run the Jupyter Notebook
